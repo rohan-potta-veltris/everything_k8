@@ -6,7 +6,7 @@ A) Kubernetes mainly has two major components:
 Components of the Control Plane:
 1. API server => This is the tool used to communicate with the cluster. It ensures that the user is authenticated and authorized to execute the requested command. Users communicate with the API server through kubectl commands.
 2. etcd => This is essentially the database of the cluster. It stores information such as the number of nodes and deployments as key-value pairs.
-3. Controller manager => This manages the individual controllers for components such as services, deployments, and namespaces, and ensures the desired state is equal to the acutal state.
+3. Controller manager => This manages the individual controllers for components such as services, deployments, and namespaces, and ensures the desired state is equal to the actual state.
 4. Scheduler => This finds a suitable node for a pod based on criteria such as availability and resource utilization. It receives information from the API server.
 
 Components of the Worker Node:
@@ -18,7 +18,7 @@ Q) What is a pod?
 A pod is the smallest deployable unit in Kubernetes. A pod can have multiple containers within it, although it usually contains one container.
 
 Q) Why does k8s use a pod?
-A) This is because a pod is the smallest deployable unit in k8s and it needs a wat ti group contianer to be treated as a single application unit 
+A) This is because a pod is the smallest deployable unit in k8s and it needs a wat ti group container to be treated as a single application unit 
 
 Q) What is the flow for updating a deployment from one pod to three pods?
 1. Through kubectl, we make the request and send it to the API server. The API server then authenticates, authorizes, and validates the request.
