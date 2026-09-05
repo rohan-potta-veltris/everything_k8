@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    env: demo
+spec:
+  template: #spec of the pod that it should be created , we don't need kind and apiVersion here
+    metadata:
+      labels:
+        env: demo
+        type: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+  replicas: 3 #number of pods to be created
+  selector: #selector is used to select the pods that are created by this replication controller
+    matchLabels:
+      env: demo
