@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: nginx-svc
+  labels:
+    env: demo
+
+spec:
+  type: NodePort
+  ports:
+    - nodePort: 30001   # Port exposed on the Node
+      port: 80          # Port exposed by the Service
+      targetPort: 80    # Port where the application is running inside the Pod
+  selector: #which pod or deployment it should taget to 
+      env: demo
