@@ -7,9 +7,9 @@ metadata:
     env: demo
 
 spec:
-  type: ClusterIP #used by default by servvice if not mentions
+  type: ClusterIP #used by default by service if not mentions
   ports:
     - port: 80          # Port exposed by the Service
       targetPort: 80    # Port where the application is running inside the Pod
-  selector: #which pod or deployment it should taget to 
+  selector: #which pod or deployment it should target to 
       env: demo

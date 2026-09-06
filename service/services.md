@@ -4,7 +4,7 @@ to give an endpoint we make use of services.
 
 
 1. NodePort:
-To explose our application externally we use nodeport , range is 13,000 to 32,767
+To expose our application externally we use nodeport , range is 13,000 to 32,767
 target port is the one where the application runs on example 80
 port is the port of the service that we use
 
@@ -36,9 +36,9 @@ But this wont work due to the kind cluster , we would have to add extra kind ste
 
 -------------------------
 ClusterIP
-for every ip that gets re-started or recreasted the ip of the said pos changes 
+for every ip that gets re-started or recreated the ip of the said pods changes 
 this will have the endpoint of the pods for example frontend so it knows where to go
-this is internl to the cluster so no external-ip
+this is internal to the cluster so no external-ip
 
 -------------
 Load Balancer:
