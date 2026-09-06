@@ -11,3 +11,7 @@ Wait if i have one pod , i don't need a svc but if i have 3 pods then will i nee
 In a Pod what is the difference is running vs completed ?
 
 Why do we use a deployment when we have a replicaset?
+
+Labels Vs Selector Vs Annotation
+
+When should we not use K8?
