@@ -12,7 +12,7 @@ they are similar to the deployment
 
 ITS IMPORTANT TO NOTE THAT ONLY ONE POD PER DAEMON SET ON EACH NODE 
 
-also note that control plan is not counted, so daemon set will only be on the worker nodes
+also note that control plane is not counted, so daemon set will only be on the worker nodes
 
 (base) PS D:\Devops\everything_k8\daemonsets> kubectl get ds -A 
 NAMESPACE     NAME               DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
@@ -21,7 +21,7 @@ kube-system   kindnet            3         3         3       3            3     
 kube-system   kube-proxy         3         3         3       3            3           kubernetes.io/os=linux   19h
 (base) PS D:\Devops\everything_k8\daemonsets> 
 
-To get from all the name spaces -A
+To get from all the namespaces -A
 
 Cron Job => when we want to schedule at a specific time period repeatedly 
 

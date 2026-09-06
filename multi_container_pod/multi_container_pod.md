@@ -140,7 +140,7 @@ HOSTNAME=multi-container-pod
 FIRST_NAME=Rohan
 CLUSTER_SVC_SERVICE_PORT=80
 
-We cant enter the init container because it doesn't exist cause it has finished its job , but if it was still existed we can enter with the command 
+We can't enter the init container because it doesn't exist cause it has finished its job , but if it was still existed we can enter with the command 
 kubectl exec -it multi-container-pod -c init-myservice -- sh
 
 
@@ -155,7 +155,7 @@ multi-container-pod            0/1     Init:1/2   0          2s
 This means that unless all the init containers are ready the main pod won't come up 
 (base) PS D:\Devops\everything_k8\multi_container_pod> kubectl exec -it multi-container-pod -c init-mydb -- sh      
 / # 
-I am able to exec into this as the pod hasnt been initialized yet
+I am able to exec into this as the pod hasn't been initialized yet
 
 (base) PS D:\Devops\everything_k8\multi_container_pod> kubectl expose deployment redis-deploy --name mydb --port 80
 service/mydb exposed
