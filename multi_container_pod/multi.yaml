@@ -9,7 +9,7 @@ spec:
     - name: my-app-container
       image: busybox:1.28
       command: ['sh', '-c','echo the app is running && sleep 3600'] # How to pass the command and pass it with the arguments
-      #The reason we say 3600 is so that the pod doest reach completed and will be in running state for 1 hour
+      #The reason we say 3600 is so that the pod doesn't reach completed and will be in running state for 1 hour
       env:
         - name: FIRST_NAME
           value: "Rohan"

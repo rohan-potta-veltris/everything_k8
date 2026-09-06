@@ -12,7 +12,7 @@ they are similar to the deployment
 
 ITS IMPORTANT TO NOTE THAT ONLY ONE POD PER DAEMON SET ON EACH NODE 
 
-also note that contorl plan is not counted, so daemon set will only be on the worker nodes
+also note that control plan is not counted, so daemon set will only be on the worker nodes
 
 (base) PS D:\Devops\everything_k8\daemonsets> kubectl get ds -A 
 NAMESPACE     NAME               DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
@@ -23,10 +23,12 @@ kube-system   kube-proxy         3         3         3       3            3     
 
 To get from all the name spaces -A
 
-Chorn Job => when we wanto shedule at a specific time period repeatedly 
+Cron Job => when we want to schedule at a specific time period repeatedly 
 
 under the spec we add 
 schedule = "* * * * *" (min, hour, day_of_month, month,day_of_month)
 day_of_month = sun(0) to sat(6)
 
 so say we want to run every 5 mins => */5 * * * *
+
+Jobs are only executed once for example installation steps 

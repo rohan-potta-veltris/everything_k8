@@ -3,9 +3,9 @@ we can have a main container which is the app , and with it can be an "init" to 
 
 for example if we need to make a new pod , this will make a init container first and then makes the app container.
 
-These mult-containers are inisde the pod and share the resources totally.
+These multi-containers are inside the pod and share the resources totally.
 
-There is an image called busybox and sort of like a debugging contianer
+There is an image called busybox and sort of like a debugging container
 
 
 ----
@@ -93,7 +93,7 @@ Events:
   Normal  Created    40s   kubelet            Created container init-myservice
   Normal  Started    40s   kubelet            Started container init-myservice
 
-stuck in waiting due to pod initialization and this is because the service is still not ready and without the init the main pod wont be created at all.
+stuck in waiting due to pod initialization and this is because the service is still not ready and without the init the main pod won't be created at all.
 
 
 (base) PS D:\Devops\everything_k8> kubectl get pods                                                                                       
@@ -140,19 +140,19 @@ HOSTNAME=multi-container-pod
 FIRST_NAME=Rohan
 CLUSTER_SVC_SERVICE_PORT=80
 
-We cant enter the init container becasue it doesnt exist cause it has finished its job , but if it was still existed we can enter with the command 
+We cant enter the init container because it doesn't exist cause it has finished its job , but if it was still existed we can enter with the command 
 kubectl exec -it multi-container-pod -c init-myservice -- sh
 
 
 Note we cannot add or remove the init containers for an already running pod
 
-now adding a second init contaier 
+now adding a second init container 
 
 (base) PS D:\Devops\everything_k8\multi_container_pod> kubectl get pods -w                               
 NAME                           READY   STATUS     RESTARTS   AGE
 multi-container-pod            0/1     Init:1/2   0          2s
 
-This means that unless all the init containers are ready the main pod wont come up 
+This means that unless all the init containers are ready the main pod won't come up 
 (base) PS D:\Devops\everything_k8\multi_container_pod> kubectl exec -it multi-container-pod -c init-mydb -- sh      
 / # 
 I am able to exec into this as the pod hasnt been initialized yet
