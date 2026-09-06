@@ -6,3 +6,8 @@ What is scaling?
 rolling out updating methods and policies, and rollback and well in deployments
 
 Wait if i have one pod , i don't need a svc but if i have 3 pods then will i need an svc?
+
+
+In a Pod what is the difference is runing vs completed ?
+
+Why do we use a deployment when we have a replicaset?
