@@ -15,3 +15,12 @@ Why do we use a deployment when we have a replicaset?
 Labels Vs Selector Vs Annotation
 
 When should we not use K8?
+
+
+do tolerations happen for deployments as well?
+If taint doesnt satify then will it not allocate at all?
+
+Selector of the node , vs the taint and tolerance 
+
+Do we have a yaml for the node , where we mention the labels?
+w

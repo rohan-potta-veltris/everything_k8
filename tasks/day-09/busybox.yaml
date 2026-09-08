@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: temp-pod
+  labels:
+    env: day-09
+spec:
+  containers:
+    - name: busybox
+      image: busybox:1.35.0
+      command: ["sh", "-c", "wget myapp"]
+
