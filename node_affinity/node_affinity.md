@@ -1,7 +1,7 @@
 This is like an upgrade for the NodeSelector
 this is also done with labels and selectors
 
-say for eample 
+say for example 
 label -> disk =hdd
 label -> disk =ssd
 
@@ -11,10 +11,10 @@ so if someone changes the label , once the pod is schedules in taint and tolerat
 
 but here there are a few properties
 
-requiredDuringSchedulingIgnoredDuringExecution => must satisy the condition
+requiredDuringSchedulingIgnoredDuringExecution => must satisfy the condition
 preferredDuringSchedulingIgnoredDuringExecution => it prefers if the condition can be matched
 
-meaning if there is any change after the schedule it wont be removed and only be affecting the newly scheuled pods
+meaning if there is any change after the schedule it won't be removed and will only affect the newly scheduled pods
 
 
 | Operator       | Meaning                                             |

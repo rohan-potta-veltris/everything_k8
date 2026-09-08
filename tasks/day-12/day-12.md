@@ -3,4 +3,4 @@ valid values: "OnFailure", "Never"
 why do they exist and when are they needed?
 
 
-Chronjobs will always make a new pod and wont re-use the created pod
+CronJobs will always make a new pod and won't reuse the created pod

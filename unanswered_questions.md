@@ -18,7 +18,7 @@ When should we not use K8?
 
 
 do tolerations happen for deployments as well?
-If taint doesnt satify then will it not allocate at all?
+If taint doesn't satisfy, will it not allocate at all?
 
 Selector of the node , vs the taint and tolerance 
 

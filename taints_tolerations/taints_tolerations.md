@@ -1,5 +1,5 @@
 Say we have one node saying gpu=true and this is like a taint , and when a new pod comes in that we want to schedule it , but only those pods that have gpu=true will be allocated in that node 
-the way we make the pod go into that taineted node is by using toleration.
+the way we make the pod go into that tainted node is by using toleration.
 If a pod has a toleration gpu=true then it will be scheduled into that node.
 essentially we are only allowing certain some pods into a node.
 
@@ -45,7 +45,7 @@ NAME   READY   STATUS    RESTARTS   AGE
 pod    0/1     Pending   0          11s
 (base) PS D:\Devops\everything_k8\taints_tolerations> 
 
-becuase there is no availbale nodes 
+because there are no available nodes 
 
 
 (base) PS D:\Devops\everything_k8\taints_tolerations> kubectl get pods       
@@ -73,7 +73,7 @@ node/cluster-worker2 untainted
 
 add a - at the end
 
-Note this does not guarantee that it wont be on a particular pod , meaning if gpu=true was put on worker node 2 , and scheuler sends it there then it would directly be placed into that node 
+Note this does not guarantee that it won't be on a particular pod, meaning if gpu=true was put on worker node 2, and the scheduler sends it there, then it would directly be placed on that node 
 So to better proof this we use "selectors"
 
 NodeSelector is like label and give the pod the choice to match the label to pod-label

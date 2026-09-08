@@ -25,7 +25,7 @@ The pod should be scheduled now on worker01
 
 Delete the taint on the control plane node
 (base) PS D:\Devops\everything_k8\tasks\day-14> kubectl taint node cluster-control-plane node-role.kubernetes.io/control-plane:NoSchedule-
-this removes the taint on the control plane and now i can scheule work load on this 
+this removes the taint on the control plane and now I can schedule workloads on this 
 (base) PS D:\Devops\everything_k8\tasks\day-14> kubectl get pod redis -o wide
 NAME    READY   STATUS    RESTARTS   AGE   IP           NODE                    NOMINATED NODE   READINESS GATES
 redis   1/1     Running   0          26s   10.244.0.5   cluster-control-plane   <none>           <none>
@@ -50,4 +50,4 @@ redis   1/1     Running   0          2m14s   10.244.0.5   cluster-control-plane 
 (base) PS D:\Devops\everything_k8\tasks\day-14> 
 
 
-Adding a taint doesnt evict the already exisitng and running pods on the node 
+Adding a taint doesn't evict the already existing and running pods on the node

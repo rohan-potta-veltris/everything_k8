@@ -1,4 +1,4 @@
-We will be looking at daemonsets ,jobs ,chron jobs
+We will be looking at DaemonSets, Jobs, and CronJobs
 
 Daemon set will make the replicas across the nodes
 

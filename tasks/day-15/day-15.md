@@ -1,5 +1,5 @@
 Task details
-create a pod with nginx as the image and add the nodeffinity with property requiredDuringSchedulingIgnoredDuringExecution and condition disktype = ssd
+create a pod with nginx as the image and add the node affinity with property requiredDuringSchedulingIgnoredDuringExecution and condition disktype = ssd
 after created 
 
 
@@ -50,7 +50,7 @@ Events:
 (base) PS D:\Devops\everything_k8\tasks\day-15> 
 
 
-add the label to your worker01 node as distype=ssd and then check the status of the pod
+add the label to your worker01 node as disktype=ssd and then check the status of the pod
 (base) PS D:\Devops\everything_k8\tasks\day-15> kubectl label node cluster-worker disktype=ssd
 node/cluster-worker labeled
 (base) PS D:\Devops\everything_k8\tasks\day-15> 

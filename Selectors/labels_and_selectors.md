@@ -1,3 +1,3 @@
-Labels are attached at the metadata and then used to filer and attach for deployment 
+Labels are attached in the metadata and then used to filter and attach to a deployment 
 Selector is used to match the label for that object for the usage 
 

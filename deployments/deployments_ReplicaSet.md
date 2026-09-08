@@ -1,9 +1,9 @@
 Replication is the spins up multiple identical instances of a pod
 
-So say for example is a pod fails or if we need a High Availabiloty via scaling the replica set will make more pods
+So say for example if a pod fails or if we need high availability via scaling, the ReplicaSet will make more pods
 
 
-Replica Controller is incharge that the replicas are running and nothing is crashing , even if there is a pod failure.
+The ReplicationController is in charge of ensuring that the replicas are running and nothing is crashing, even if there is a pod failure.
 
 The replication controller also acts as a Load Balancer and this directs the traffic based on the replicas it has created.
 
@@ -63,7 +63,7 @@ Events:
 
 
 -----------
-Replication Controller is the old version , and the ReplicaSet is the new way , the controller is used to manage the pods as part of that controller, but with the set we can manage already existing and created pods and this is done with the help of the "Slector" and called "matchLabels" that will be inside the selector and will be managed by the set
+Replication Controller is the old version, and the ReplicaSet is the new way. The controller is used to manage the pods as part of that controller, but with the set we can manage already existing and created pods, and this is done with the help of the "Selector" and called "matchLabels" that will be inside the selector and will be managed by the set
 The point is they needed a way to have in control of the MatchLabel and MatchExpression so they added this feature 
 
 We learned that a ReplicaSet maintains the number of Pods based on its replica count and selector.
@@ -211,7 +211,7 @@ Events:
   Normal  ScalingReplicaSet  <invalid>  deployment-controller  Scaled down replica set nginx-deployment-8565945546 to 2 from 3
   Normal  ScalingReplicaSet  <invalid>  deployment-controller  Scaled up replica set nginx-deployment-6d7475c7d8 to 2 from 1
 (base) PS D:\Devops\everything_k8\deployments> 
-We can see the iamge change
+We can see the image change
 
 To see the deploy changes:
 (base) PS D:\Devops\everything_k8\deployments> kubectl rollout history deploy nginx-deployment

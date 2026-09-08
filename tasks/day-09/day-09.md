@@ -3,7 +3,7 @@ Discuss: Can you expose the Pods as a service without a deployment?
 Discuss: Under what condition would you use the service types LoadBalancer, node port, clusterIP, and external?
 
 
-Sevice dont use match labels , cause the selector is by default used for that
+Services don't use match labels because the selector is used by default for that
 
 (base) PS D:\Devops\everything_k8\tasks\day-09> wget 10.96.183.150
 wget : Unable to connect to the remote server

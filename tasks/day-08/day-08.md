@@ -44,4 +44,4 @@ deployment.apps/nginx rolled back
 undo the revision by 1 
 
 kubectl rollout undo deployment/nginx --to-revision=1
-To go to a specific revison
+To go to a specific revision
