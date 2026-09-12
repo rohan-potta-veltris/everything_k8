@@ -1,9 +1,9 @@
-How to re-use the env variables , naturally we cant keep adding it at the pod level , so we dont include it in the pod , 
-we use a config map and we injesct the value to the pod 
+How to re-use the env variables; naturally, we can't keep adding them at the pod level, so we don't include them in the pod.
+we use a config map and inject the value into the pod
 
 
 
-imperative way of cm => kubectl create cm app-cm --from-literal=name=value \ --fronm-literal=name1=value1
+imperative way of cm => kubectl create cm app-cm --from-literal=name=value \ --from-literal=name1=value1
 
 kubectl get cm 
 kubectl describe cm cm-name , this will show the data of the config map
@@ -14,7 +14,7 @@ to pass the entire file as a cm
 
 kubectl create cm cm-app --from-file=app.config
 
-to updat the cm for a pod is to force it meaning delete and then re-create
+to update the cm for a pod, force it by deleting and then re-creating it
 
 
 

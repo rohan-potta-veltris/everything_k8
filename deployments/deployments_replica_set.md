@@ -9,12 +9,12 @@ The replication controller also acts as a Load Balancer and this directs the tra
 
 The only way to make a pod self healing , by that i mean if a pod fails to make another one is by replica set.
 
-By default , if a pod i make dies or deleted it wont make a new one , the max k8 would do is restart the pod.
+By default, if a pod I make dies or is deleted, it won't make a new one; the most Kubernetes would do is restart the pod.
 
 REPLICATION CONTROLLER:
 Again using kubectl explain rc (ReplicationController), we get the apiVersion and kind
 
-(base) PS D:\Devops\everything_k8\deployments> kubectl apply -f .\Replication_Controller.yaml
+(base) PS D:\Devops\everything_k8\deployments> kubectl apply -f .\replication_controller.yaml
 replicationcontroller/nginx-rc created
 (base) PS D:\Devops\everything_k8\deployments> kubectl get pods
 NAME             READY   STATUS              RESTARTS   AGE
@@ -91,7 +91,7 @@ We had 3 Pods running.
 
 Then we manually deleted one Pod using:
 
-kubectl delete -f ..\pods\declarative.yml
+kubectl delete -f ..\pods\declarative.yaml
 
 Now only 2 Pods were left.
 

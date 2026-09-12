@@ -6,7 +6,7 @@ metadata:
     env: day-09
 spec: 
   template:
-    metadata: #this is for the pod , so it wont need a name 
+    metadata: #this is for the pod, so it won't need a name
       labels:
         env: day-09
     spec:

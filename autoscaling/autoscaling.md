@@ -1,10 +1,10 @@
 Scaling is by changing the workload based on the demand.
 
-autoscaling based on the load of the server we would increae of decrease the workload of ours.
+autoscaling based on the load of the server we would increase of decrease the workload of ours.
 
 Horizontal Pod Scaling is adding a new or removing pods (Scale Out/In)
 
-Vertical Pod Scaling is increasing or decreasing the resources of the pod, this will require some downtime such as a restart as we increase the size of the workload, the memory or the CPIU(Scale Up/Down)
+Vertical Pod Scaling is increasing or decreasing the resources of the pod, this will require some downtime such as a restart as we increase the size of the workload, the memory or the CPU(Scale Up/Down)
 
 Horizontal Workload Pods => HPA (horizontal pod autoscaling , takes metrics from the metrics server)
 Only HPA is k8 native
@@ -12,7 +12,7 @@ Only HPA is k8 native
 
 Horizontal Infra Nodes => Cluster Autoscaler
 Vertical Workload Pods => VPA (vertical pod autoscaling , takes metrics from the metrics server)
-Vertical Infra Nodes => Node AutoProvioning 
+Vertical Infra Nodes => Node AutoProvisioning 
 These are 3rd party or like a cloud tool
 
 

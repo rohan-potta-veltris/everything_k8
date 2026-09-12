@@ -1,9 +1,9 @@
-when we do kubectl get pods , how doest he autorization happen?
+when we do kubectl get pods, how does the authorization happen?
 There is a file called kubeconfig , which has the details of like the server the permissions who am i and stuff
 
 kubectl get pods --kubeconfig config_file
 
-the default file is in the home diretctory 
+the default file is in the home directory
 
 (base) PS C:\Users\Rohan\.kube> pwd
 
@@ -34,10 +34,10 @@ A context connects a cluster + user + optionally a namespace.
 
 ideally we would want multiple configs when we want to logically isolate , for example project wise and within it we can mention dev , qa and prod and so on
 
-Authntication is who are you , done via certificates and encrytpion
+Authentication is who you are, done via certificates and encryption
 Authorization is what can you do , done via ABAC RBAC NODE Webhook
 
-ABAC → Attribute-Based Access Control => this requires the API server to be restarted after the plicy has been assigned 
+ABAC → Attribute-Based Access Control => this requires the API server to be restarted after the policy has been assigned
 RBAC → Role-Based Access Control => this dynamic like iam in aws 
 NODE => used for nodes to interact with each other 
 

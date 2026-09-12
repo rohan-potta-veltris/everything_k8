@@ -14,5 +14,5 @@ At line:1 char:1
     + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
  
 (base) PS D:\Devops\everything_k8\tasks\day-09> 
-This doesnt work from outside the cluster because it is a clusterip and only works within it.
+This doesn't work from outside the cluster because it is a ClusterIP and only works within the cluster.
 

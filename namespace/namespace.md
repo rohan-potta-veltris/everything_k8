@@ -14,7 +14,7 @@ kubectl get all --namespace namespace_name to get the k8 objects the namespace
 kubectl get all -n namespace_name
 
 
-A Service in one namespace can access the the services inside the same namespace with the hostname.
+A Service in one namespace can access the services inside the same namespace with the hostname.
 But for services with different namespaces would need to be accessed via FQDN (Fully Qualified Domain Name) and not only with the hostname 
 
 Creating a new namespace
@@ -89,7 +89,7 @@ nginx-svc     NodePort    10.96.25.170    <none>        80:30001/TCP   16h
 svc-demo      ClusterIP   10.96.151.126   <none>        80/TCP         32s
    
 
-Okay so if i exec into the the pod in the -ns demo and try to curl via the service name 
+Okay so if i exec into the pod in the -ns demo and try to curl via the service name 
 # curl svc-demo
 curl: (6) Could not resolve host: svc-demo
 #     

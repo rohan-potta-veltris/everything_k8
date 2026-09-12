@@ -1,4 +1,4 @@
-WHat are the restart policies for the chron job
+What are the restart policies for the CronJob
 valid values: "OnFailure", "Never"
 why do they exist and when are they needed?
 

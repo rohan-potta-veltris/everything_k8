@@ -10,7 +10,7 @@ Create a pod and try to schedule it manually without the scheduler.
 nodeName is directly passing the scheduler, whereas the nodeSelector still uses the scheduler
 
 Login to the control plane node and go to the directory of default static pod manifests and try to restart the control plane components
-To log into the node , we cant use exec as it is only used for pods , so to log into the control plane we will use the ssh , or in kind we would have to docker exec.
+To log into the node, we can't use exec as it is only used for pods, so to log into the control plane we will use SSH, or in kind we would have to use docker exec.
 
 (base) PS D:\Devops\everything_k8\tasks\day-13> docker ps
 CONTAINER ID   IMAGE                  COMMAND                  CREATED      STATUS          PORTS                                                 NAMES

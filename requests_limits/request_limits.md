@@ -2,14 +2,14 @@ Requests and Limits
 
 When the nodes are full with all the pods, then any new future pods will have the error called "insufficient resources"
 
-When some pods dont have a limit , and the load increases the said pod can exceed what the node can handle and this will throw and error of OOM (out of memory)
+When some pods don't have a limit, and the load increases, the said pod can exceed what the node can handle and this will throw an error of OOM (out of memory)
 
 and all future pods will also get the same oom 
 
 And for this reason we give the pods or containers limits
 
 
-This metrics.yaml gets like some metrics from teh objects 
+This metrics.yaml gets some metrics from the objects
 
 (base) PS D:\Devops\everything_k8\requests_limits> kubectl get pods -n kube-system
 NAME                                            READY   STATUS    RESTARTS      AGE
@@ -41,7 +41,7 @@ This is done by the metrics.yaml
 
 kubectl create namespace memory-example
 
-Limits and requests come for the contianer of the pod 
+Limits and requests apply to the container of the pod
 
 They can be for memory or CPU , the limit or request
 
@@ -52,7 +52,7 @@ requests: #this is what will be allocated to pod
 limits: #this is the max size and if exceeded it will kill the node
 
 
-its better to fail the pod than the entire node all togther
+it's better to fail the pod than the entire node altogether
 
 and when a pod asks for more limit than what a node can give , the node will be left in pending.
 

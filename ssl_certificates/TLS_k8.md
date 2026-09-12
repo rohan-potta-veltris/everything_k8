@@ -11,7 +11,7 @@ B)
     api-server is the client
     kubelet is the server (or any component of the worker node) 
 
-So for mTLs we will need a certiifacte for everu cmponnent on each individual node
+So for mTLs we will need a certificate for every component on each individual node
 
 We have components of .crt or .pem will be part of the certificate
 If anything in .key or -key is part of the private key 
@@ -27,10 +27,10 @@ openssl genrsa -out myuser.key 3072
 openssl req -new -key myuser.key -out myuser.csr -subj "/CN=myuser"
 
 
-2. now the admin will need to make a csr.yaml and mention the request and name and stuff 
-in the csr.yaml the .csr file needs to be base64 encoded before adding it to the csr.yaml file and this needs to be without any line breaks meaning one single line using the command "cat myuser.csr | base64 | tr -d "\n"
+2. now the admin will need to make a CSR.yaml and mention the request and name and stuff 
+in the CSR.yaml the .csr file needs to be base64 encoded before adding it to the CSR.yaml file and this needs to be without any line breaks meaning one single line using the command "cat myuser.csr | base64 | tr -d "\n"
 
-this .csr is made by the ceertificate of the second command
+this .csr is made by the certificate of the second command
 
 once applied we use kubectl get csr
 
@@ -43,7 +43,7 @@ this csr_name will come from kubectl describe csr csr_name
 
 To share this with the user 
 
-kubectl get csr csr_name  -o yaml > user_csr.yaml #this will have the certificates and stuff and all will be encoded and hence needs to be deconded 
+kubectl get csr csr_name  -o yaml > user_csr.yaml #this will have the certificates and stuff and all will be encoded and hence needs to be decoded 
 
 certificate_value from the yaml | base64 -d 
 

@@ -27,10 +27,10 @@ kubectl delete pod nginx-pod
 To declarative create the pod we make a yaml file 
 
 To create the pod 
-kubectl create -f .\declarative.yml 
+kubectl create -f .\declarative.yaml 
 
 to create or update 
-kubectl apply -f .\declarative.yml 
+kubectl apply -f .\declarative.yaml 
 
 a way to directly update the pod would be to 
 

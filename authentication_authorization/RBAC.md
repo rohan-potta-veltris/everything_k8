@@ -1,6 +1,6 @@
 What is RBAC?
 RBAC is back is the role based access control
-this is for the authorization in the folder of ssl_certificates we made use of the authentication , so this wont mean they can run all commands 
+this is for the authorization in the folder of ssl_certificates we made use of the authentication, so this won't mean they can run all commands
 
 to see if i have access to do something 
 
@@ -18,7 +18,7 @@ To show you the value as to which user am i using.
 (base) PS D:\Devops\everything_k8\authentication_authorization> kubectl auth can-i get pods --as adam
 no                      
 (base) PS D:\Devops\everything_k8\authentication_authorization> 
-This can be done by checking if this user has that permission , note if the user doesnt exist it comes ad a no
+This can be done by checking if this user has that permission; note that if the user doesn't exist, it returns no
 
 Groups => v1 means these are core groups 
 Named groups => like apps/v1 ,  k8.io/v1 is a named group 
@@ -28,7 +28,7 @@ then once we build the role , we need to use the apibinding to make the role bin
 
 (base) PS D:\Devops\everything_k8\authentication_authorization> kubectl config set-credentials user_name --client.key = user_name.key --client-certificate = user_name.crt                   
 
-This is used to add the user into our config and then like this is from the authenticaion details set
+This is used to add the user into our config, using the authentication details set
 and then we need to set the context with 
 
 kubectl config set-context context_name --cluster=cluster-name --user=user_name
