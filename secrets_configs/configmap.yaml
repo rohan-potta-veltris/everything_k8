@@ -1,0 +1,7 @@
+apiVersion: v1
+data: #inplace of spec we have data
+  firstname: Rohan
+  lastname: Test
+kind: ConfigMap
+metadata:
+  name: app-cm

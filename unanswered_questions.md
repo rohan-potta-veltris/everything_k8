@@ -23,4 +23,6 @@ If taint doesn't satisfy, will it not allocate at all?
 Selector of the node , vs the taint and tolerance 
 
 Do we have a yaml for the node , where we mention the labels?
-w
+
+
+how to map the cm as a volume and read the secrets and configmap from there 

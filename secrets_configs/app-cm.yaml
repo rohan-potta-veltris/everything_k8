@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  config.json: "{\r\n  \"firstname\": \"rohan\",\r\n  \"lastname\": \"test\"\r\n}"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: app-cm

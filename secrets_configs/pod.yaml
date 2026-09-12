@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app.kubernetes.io/name: MyApp
+spec:
+  containers:
+  - name: myapp-container
+    image: busybox:1.28
+    env:
+    - name: FIRSTNAME #this is for the container
+      valueFrom:
+        configMapKeyRef:
+          name: app-cm #the metadata name 
+          key: firstname #this is the reference for the cm 
+    command: ['sh', '-c', 'echo The app is running! && sleep 3600']
