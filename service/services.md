@@ -31,7 +31,7 @@ cluster-worker2         Ready    <none>          32h   v1.29.4   172.19.0.5    <
 We see where the pod is running on which node and then <node-ip>:30001
 
 
-But this won't work due to the kind cluster; we would have to add extra kind steps, so make sure to add the cluster details in the file kind-service.yaml
+But this won't work due to the kind cluster; we would have to add extra kind steps, so make sure to add the cluster details in the file kind_service.yaml
 
 
 -------------------------
