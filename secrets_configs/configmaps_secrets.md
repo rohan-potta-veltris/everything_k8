@@ -15,3 +15,7 @@ to pass the entire file as a cm
 kubectl create cm cm-app --from-file=app.config
 
 to updat the cm for a pod is to force it meaning delete and then re-create
+
+
+
+Now how do i use secrets ? cause cm can still be read.
