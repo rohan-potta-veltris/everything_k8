@@ -26,3 +26,5 @@ Do we have a yaml for the node , where we mention the labels?
 
 
 how to map the cm as a volume and read the secrets and configmap from there 
+
+Practice how to make roles and users RBAC for k8 and how to make groups
