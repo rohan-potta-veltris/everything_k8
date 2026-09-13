@@ -9,7 +9,7 @@ Q) Is Kubernetes always the solution?
 Kubernetes is not always the solution because it can be expensive and waste resources, depending on the number of clusters and nodes we have.
 
 Q) What should be the difference between the Kubectl and your K8 cluster version?
-A) The best practice is to always have them at the same version , but if now +/- of the 1 minor version is good
+A) The best practice is to always have them at the same version , but a +/- of 1 minor version is good
 Command:
 (base) PS D:\Devops\everything_k8\Selectors> kubectl version                                                                                       
 Client Version: v1.32.2                  

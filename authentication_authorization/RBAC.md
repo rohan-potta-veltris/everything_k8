@@ -1,5 +1,5 @@
 What is RBAC?
-RBAC is back is the role based access control
+RBAC is the role based access control
 this is for the authorization in the folder of ssl_certificates we made use of the authentication, so this won't mean they can run all commands
 
 to see if i have access to do something 

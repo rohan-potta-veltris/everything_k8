@@ -1,6 +1,6 @@
 Scaling is by changing the workload based on the demand.
 
-autoscaling based on the load of the server we would increase of decrease the workload of ours.
+autoscaling based on the load of the server we would increase or decrease the workload of ours.
 
 Horizontal Pod Scaling is adding a new or removing pods (Scale Out/In)
 

@@ -1,4 +1,4 @@
-What is a serive account?
+What is a service account?
 This is something an application would use , this is used to run and monitor something 
 For example jenkins needs access to the cluster this would be done by the service account 
 Same thing for prometheus 
@@ -73,9 +73,9 @@ Events:              <none>
 (base) PS D:\Devops\everything_k8> 
 
 
-(base) PS D:\Devops\everything_k8\service_acccounts> kubectl apply -f .\secret.yaml
+(base) PS D:\Devops\everything_k8\service_accounts> kubectl apply -f .\secret.yaml
 secret/build-robot-secret created
-(base) PS D:\Devops\everything_k8\service_acccounts> kubectl describe secret
+(base) PS D:\Devops\everything_k8\service_accounts> kubectl describe secret
 Name:         build-robot-secret
 Namespace:    default
 Labels:       <none>
@@ -88,8 +88,8 @@ Data
 ====
 ca.crt:     1107 bytes
 namespace:  7 bytes
-token:      eyJhbGciOiJSUzI1NiIsImtpZCI6Im1KTElaeGtYZUlsaExuLWE1NTlLVFpvb19Hek9SQm9jRUtUZWlPT0JnejgifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImJ1aWxkLXJvYm90LXNlY3JldCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJidWlsZC1zYSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImY0ZDNiNTliLWJkOTUtNDU1OS04ZjEwLWJjNmRiZmVjNTJlMiIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmJ1aWxkLXNhIn0.ap9uNU6ojvPoamYOBXjyROzwsTt429x8aYNDcz_GbB-bBjUTuaO0ffHOvn8B15w6TQGwRnoy9TIBLIXQZZKn1SqcHy6Y_beq9RN-kmiWLKbQFzBkLqKzKuNlikJaZzXe6yoWWOGlW8e87sVAMSgEsZHu4TruuFMpQGG17pZjR1kQ-1GVRT4wiV9Gsb-p0wo-GVyeKlaS8DJ-zlB4ezDN5bp2atw1oeIwp656MFJQ0fO1gZn38bRM_yt3yK-SUIvwUkFvmwzl0uTu2KKz_Rm9tIVSQoqUsnmnXPMmEIJX7ESf_lKFaFMwpBMsSIju14xZZEbm0UZTAqS2PrhMJDDAjA
-(base) PS D:\Devops\everything_k8\service_acccounts> 
+token:      <redacted-token>
+(base) PS D:\Devops\everything_k8\service_accounts> 
 
 
 service account is no different than a user where we have to check and use the permission with commands like 
