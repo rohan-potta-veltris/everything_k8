@@ -12,7 +12,7 @@ Example Weave-net , flannel , calico , this needs to be installed and this will 
 
 Now for example , the FE should not connect to database and vice versa , this is all controlled / restricted with the help of network policies.
 
-Flannel and kindnet dont support network policies
+Flannel and kindnet don't support network policies
 
 (base) PS D:\Devops\everything_k8> kubectl get pods -n kube-system      
 NAME                                            READY   STATUS    RESTARTS      AGE

@@ -1,4 +1,4 @@
-This doesnt have monitoriting , so we make a pod for metric_server and can be done with applying their manifest file 
+This doesn't have monitoring , so we make a pod for metric_server and can be done with applying their manifest file 
 https://github.com/kubernetes-sigs/metrics-server
 
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml

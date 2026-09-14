@@ -1,8 +1,8 @@
 How to upgrade the kubernetes cluster , via kubeadm
 
-kubcetl node node_name drain means that it will remove the pods present in the node 
-this also means that it is unscheuable
-drain = evict all pods + cordon meaning its be marked as unschduable
+kubectl node node_name drain means that it will remove the pods present in the node 
+this also means that it is unschedulable
+drain = evict all pods + cordon meaning its be marked as unschedulable
 
 to make it working again , kubectl node node_name uncordon
 
@@ -24,15 +24,15 @@ Updation methods for the worker nodes:
 2. rolling update => do it one at a time 
 3. Blue Green => create a whole new k8 env 
 
-For the master node , its needed to have more than 1 master node else we will have a downtime ,
+For the master node , it's needed to have more than 1 master node else we will have a downtime ,
 
 
 For the componenets if api server is 1.30.X
-controller and schedular can be x-1, kubelet and kubectl can be x-2
+controller and scheduler can be x-1, kubelet and kubectl can be x-2
 
-Kubeadm first , then kubelet needs to be upgraded seperately and kubectl as well
+Kubeadm first , then kubelet needs to be upgraded separately and kubectl as well
 
-Note ideally we wont have to re-deploy the application as everythgin will be on teh deplyments and they get shared all across 
+Note ideally we won't have to re-deploy the application as everything will be on the deployments and they get shared all across 
 
 
 Why do we have to drain the nodes?

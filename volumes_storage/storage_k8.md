@@ -1,8 +1,8 @@
-We dont want to use the volume of the emtpy_dir becasue this exists till the pod is live and if the pod is removed we loose that value as well.
+We don't want to use the volume of the empty_dir because this exists till the pod is live and if the pod is removed we lose that value as well.
 
-So to make storage outside , we use persistent volume(PV) this is created before allocation , for example we make a PV for 100Gi , and then now the pod will use a PVC (persistent volume claim) and they will say this pod will need like 10Gi and what mode (maybe r/w mode) and then to that particulat volume and we match it and if all good we get a binding created.
+So to make storage outside , we use persistent volume(PV) this is created before allocation , for example we make a PV for 100Gi , and then now the pod will use a PVC (persistent volume claim) and they will say this pod will need like 10Gi and what mode (maybe r/w mode) and then to that particular volume and we match it and if all good we get a binding created.
 
-now for a deployment all the pods will share the the pvc , menaing if 50Gi all the replicas will share that, 
+now for a deployment all the pods will share the pvc , meaning if 50Gi all the replicas will share that, 
 If we want individual pod to have its own pvc we will use "statefulset"
 
 The access modes are as follows:
@@ -32,7 +32,7 @@ Storage class is basically when we need to provision the storage outside the clu
 
 The SC is also dynamically allocates and this sits on the external storage of and NFD or AWS cloud storage and to find their capacity we use kubectl get sc and then investigate the path , once we find the path in the kubectl describe sc sc_name 
 
-This sc is used as a way to dynamically allocate sotrage with manually making a PV , and sc has a multiple mapping to PVC , and then this gives exactly what is required.
+This sc is used as a way to dynamically allocate storage with manually making a PV , and sc has a multiple mapping to PVC , and then this gives exactly what is required.
 
 
 PVC

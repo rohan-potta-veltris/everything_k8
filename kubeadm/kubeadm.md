@@ -38,14 +38,14 @@ runc
     ↓
 "Okay, I'll create the isolated process"
 
-Componenets to install on each node:
-kubectl => not needed on every node just done for convinice 
-kubeadm => this is a bootstrap to help with setup , weather it is a CP or WN
+Components to install on each node:
+kubectl => not needed on every node just done for convenience 
+kubeadm => this is a bootstrap to help with setup , whether it is a CP or WN
 kubelet => this is for communication , needed on every node 
-runc&contained => needed on every node as each componenet would run as a pod or a contianer
+runc&contained => needed on every node as each component would run as a pod or a container
 
 and then crictl will be needs to run on-top of containerd , and this makes the entire same of docker 
-like docker ps , docker pull and all that we would use critctl ps and etc
+like docker ps , docker pull and all that we would use crictl ps and etc
 
 Also make sure to copy the kubeconfig file after setting up the CP
 

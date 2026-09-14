@@ -37,6 +37,6 @@ kubectl config get-contexts # to get all the contexts
 
 kubectl config use-context context_name #to switch the context
 
-if we get errors for whoami , chances are its because the certificate might have expired.
+if we get errors for whoami , chances are it's because the certificate might have expired.
 
 for kubeadm it would be different 

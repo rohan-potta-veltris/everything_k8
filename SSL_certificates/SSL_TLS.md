@@ -32,7 +32,7 @@ So the user/server needs to identify the endpoint
 hence why we use certificates in place of keys ,
 
 so when the server send the certificate the browser will validate the certificate and ensure it is coming from the right place and domain.
-so see the certificate details we have it issued by a domain name organization via the public key and so on and then we know its the right place and server and this ensures HTTPS
+so see the certificate details we have it issued by a domain name organization via the public key and so on and then we know it's the right place and server and this ensures HTTPS
 
 server creates a certificate request (Certificate Signing Request), which is sent to a Certificate Authority (CA), such as DigiCert. The CA validates the request via DNS and domain ownership, then issues a certificate and sends it back to the server.
 

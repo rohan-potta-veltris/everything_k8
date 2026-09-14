@@ -1,6 +1,6 @@
-DNS is Domain Name System , and is used to map an IP to a name , since its hard to use , it translates the name into an ip which is essentially like an address on how to reach it.
+DNS is Domain Name System , and is used to map an IP to a name , since it's hard to use , it translates the name into an ip which is essentially like an address on how to reach it.
 
-So when we enter google.com and goes to the DNS server and looks up for the name google.com and what does it translate to as an ip and thats where it is forwarded to.
+So when we enter google.com and goes to the DNS server and looks up for the name google.com and what does it translate to as an ip and that's where it is forwarded to.
 
 Now how does this one system handle all the information despite the load and traffic of the world , this is fixed with local cache, this will fix the point of going to the server to find the domain , we will instead store that in cache of the browser, there are multiple levels , from os to browser to router to isp and so on.
 
@@ -8,9 +8,9 @@ And how does this handle the load and the single point of failure , this is done
 
 Root Name Servers => there are 13 root name servers they are responsible for the DNS query and they internally many have multiple servers , 
 
-then with the help of top level domain , .dev, .com , .in and they get filtered based on this and then goes to the registar and returns the ip and is resolved.
+then with the help of top level domain , .dev, .com , .in and they get filtered based on this and then goes to the registrar and returns the ip and is resolved.
 
-you can use nsloopup to get the ip 
+you can use nslookup to get the ip 
 
 | Record    | Purpose                                    | Example                               |
 | --------- | ------------------------------------------ | ------------------------------------- |
@@ -26,9 +26,9 @@ you can use nsloopup to get the ip
 | **CAA**   | Specifies which CAs can issue certificates | `example.com → Let's Encrypt`         |
 
 NS is basically used saying that let abc.test.com should be looked at the name server of ns.something.com
-this wont redirect to the page , but will only ask for the ip which will be found in the server mentioned and then on port 53 then the website will be routed here.
+this won't redirect to the page , but will only ask for the ip which will be found in the server mentioned and then on port 53 then the website will be routed here.
 
-And this is used for self hosted domian name system
+And this is used for self hosted domain name system
 
 
 

@@ -1,3 +1,0 @@
-So now say for example all the pods are up and running but we cant see our application , how to debug , if the pods are all healthy and runnign , i would check how this is exposed , say its done using the nodeport , then i would check that particular service file and make sure that the slectors are being correctly places , and to verify i would check on teh kubectl get svc 
-we shoudl aslo check if the pods are running on teh same port that our application is targetting at.
-it could also be possible there are network policies that might be not allowing 

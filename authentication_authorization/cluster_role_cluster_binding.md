@@ -16,7 +16,7 @@ kubectl api-resources --namespaced=true
 shows the roles depending on namespace
 
 kubectl api-resources --namespaced=false
-will show the cluster roles at cluster level, that dont depend on the namespace
+will show the cluster roles at cluster level, that don't depend on the namespace
 
 
 

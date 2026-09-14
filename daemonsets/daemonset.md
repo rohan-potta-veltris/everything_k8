@@ -10,7 +10,7 @@ Some kube-proxy CNI => weave-net , flannel and calico are all like deployed as d
 
 they are similar to the deployment
 
-ITS IMPORTANT TO NOTE THAT ONLY ONE POD PER DAEMON SET ON EACH NODE 
+IT'S IMPORTANT TO NOTE THAT ONLY ONE POD PER DAEMON SET ON EACH NODE 
 
 also note that control plane is not counted, so daemon set will only be on the worker nodes
 
