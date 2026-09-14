@@ -32,3 +32,5 @@ How to make groups and add them for the RBAC
 
 
 Why is it good that the secrets are mounted and not injected into the pod ?
+
+What happens when we have a multiple CP , which has multiple etcd , then what do we do for backup
