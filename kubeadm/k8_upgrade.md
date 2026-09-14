@@ -35,5 +35,5 @@ Kubeadm first , then kubelet needs to be upgraded seperately and kubectl as well
 Note ideally we wont have to re-deploy the application as everythgin will be on teh deplyments and they get shared all across 
 
 
-
-
+Why do we have to drain the nodes?
+Before upgrading a worker node, we drain it so Kubernetes can safely move the Pods running on that node to other available nodes. If we upgrade the node without draining it first, the node may restart or become unavailable while the Pods are still running on it, which can cause those Pods and the application to become temporarily unavailable. Draining tells Kubernetes to stop scheduling new Pods on that node and safely evict the existing Pods, allowing controllers like Deployments to recreate them on other nodes. Once the node is upgraded, we uncordon it so it can receive Pods again.
