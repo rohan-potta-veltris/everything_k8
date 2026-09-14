@@ -34,3 +34,10 @@ How to make groups and add them for the RBAC
 Why is it good that the secrets are mounted and not injected into the pod ?
 
 What happens when we have a multiple CP , which has multiple etcd , then what do we do for backup
+
+
+by default is there anything like deny all with the network policy where all are deny by default?
+
+What is the difference in a volume mount and PV and PVC?
+
+CrashbackLoop vs ImagePullBack 
