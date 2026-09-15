@@ -18,3 +18,11 @@ to check the priority class
 | ---------------------- | -------------------------------------: | ------------------------------: |
 | `PreemptLowerPriority` |                                  ✅ Yes |                           ✅ Yes |
 | `Never`                |                                   ❌ No |                           ✅ Yes |
+
+
+we can see the preemption in the kubectl get events to see the envetns 
+
+or kubectl logs -n kube-system kube-scheduler-<control-plane-node>
+
+
+Pod scheduling and preemption are handled by the kube-scheduler, not the controller manager.
