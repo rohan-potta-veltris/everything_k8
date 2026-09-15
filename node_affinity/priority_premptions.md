@@ -26,3 +26,5 @@ or kubectl logs -n kube-system kube-scheduler-<control-plane-node>
 
 
 Pod scheduling and preemption are handled by the kube-scheduler, not the controller manager.
+
+kubectl get events --sort-by=.lastTimestamp
