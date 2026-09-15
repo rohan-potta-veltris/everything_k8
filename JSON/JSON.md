@@ -28,7 +28,7 @@ in k8 we don't have to explicitly mention the $
 JSONPath is basically a way to query/filter Kubernetes API output and extract specific fields. this is the only point and reason to use it
 
 
-annother thing would be is to use the sort-by 
+another thing would be is to use the sort-by 
 
 kubectl get pods --sort-by=.metadata.creationTimestamp
 

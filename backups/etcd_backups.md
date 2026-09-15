@@ -20,7 +20,7 @@ CRDs
 so the main thing that we need to take a backup of is the etcd, and this is the source of everything.
 
 we take the backup during the upgrade , or any rollback and so on.
-for cloud tools we need third part tools as we don't have access to control plane so only in managed clusters do we do this.
+for cloud tools we need third party tools as we don't have access to control plane so only in managed clusters do we do this.
 
 when we go in the manifest for the etcd , we will see that there is a path for the --data-dir at /var/lib/etcd and it is this backup that is needed 
 

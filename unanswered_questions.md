@@ -44,4 +44,4 @@ CrashbackLoop vs ImagePullBack
 
 
 In statefulsets , you get and have like each PV, or data for pods , this can be used for applications or the databases, but if i use it for databases then do i have to have the same volume mount?
-and also try and understand where and why the sc needs to be non-provisiones and like why no pvc is needed and how the mounthdir directly does this 
+and also try and understand where and why the sc needs to be non-provisioned and like why no pvc is needed and how the mounthdir directly does this 

@@ -125,7 +125,6 @@
 
 | Day | Topic                                                        | Notes | Labs | LinkedIn |
 | --- | ------------------------------------------------------------ | :---: | :--: | :------: |
-| —   | 2025 exam-changes update                                     |  [ ]  | [ ]  |   [ ]    |
 | 43  | Helm charts                                                  |  [ ]  | [ ]  |   [ ]    |
 | 44  | Kustomize                                                    |  [ ]  | [ ]  |   [ ]    |
 | 45  | StatefulSets                                                 |  [ ]  | [ ]  |   [ ]    |
@@ -142,18 +141,3 @@
 
 ---
 
-## Non-Technical (Skippable)
-
-| Topic                                    | Notes | Labs | LinkedIn |
-| ---------------------------------------- | :---: | :--: | :------: |
-| #40DaysOfKubernetes winners announcement |  [ ]  | [ ]  |   [ ]    |
-| "I Passed the CKA Twice" — study guide   |  [ ]  | [ ]  |   [ ]    |
-
----
-
-## Notes
-
-- **Days 43–55 were added after the original 40-day series** and cover material now weighted more heavily on the current exam (Helm, Kustomize, Gateway API, CRDs). Don't treat them as optional extras.
-- **Days 0–3 are skippable** if you're already comfortable with Docker.
-- View counts suggest Days 0–10 have the widest audience; engagement drops off sharply after Day 36, so plan accordingly if you tend to lose momentum.
-- To mark something done, replace `[ ]` with `[x]`.

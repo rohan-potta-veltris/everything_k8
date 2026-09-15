@@ -1,4 +1,4 @@
-So dpeloyment and replica-sets are for stateless application , menaing the data is not that important 
+So deployment and replica-sets are for stateless application , meaning the data is not that important 
 but stateful sets is for application where the state and data is important 
 
 in deployment we have the pods as:
@@ -22,7 +22,7 @@ Point is via service i could potentially connect to any one of these but with he
 
 This kinda depends if we want the load balancing or not hence why we use the stateful
 
-So now we need to make a pv , and not directly use the sc and this is becasue we want the static contorl so we make teh sc as non dynamic and then make our pv to that sc and then have an individual pvc to each of the stateful sets we make 
+So now we need to make a pv , and not directly use the sc and this is because we want the static control so we make the sc as non dynamic and then make our pv to that sc and then have an individual pvc to each of the stateful sets we make 
 
                  StorageClass
                   mongo-sc

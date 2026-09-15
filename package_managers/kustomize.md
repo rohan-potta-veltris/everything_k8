@@ -1,6 +1,6 @@
 Kustomize is like an alternative of helm but has more features and stuff
 
-kustomize is a k8 deployment + multi-enviournments 
+kustomize is a k8 deployment + multi-environments 
 
 kustomize doesnt use templates instead they have like a layered approach on each yaml 
 
@@ -18,7 +18,7 @@ so you can pipe it with kustomize build path_to_folder | kubectl apply -f -
 this will apply all the changes 
 
 
-now we can also just add it sub-direcory wise , where each folder will have their kustomization and then the in the root call the directories instead of all the files itself 
+now we can also just add it sub-directory wise , where each folder will have their kustomization and then the in the root call the directories instead of all the files itself 
 
 for example:
 in the root:
@@ -34,7 +34,7 @@ resources:
 have it like this 
 
 
-Now to manage the multiple enviournments we make a folder called ovelays and then dev test prod inside and make the changes required per the enviournemnt 
+Now to manage the multiple environments we make a folder called overlays and then dev test prod inside and make the changes required per the environment 
 
 k8s/
 ├── base/
@@ -58,5 +58,5 @@ k8s/
         └── config.env
 
 Now while applying be careful about the context vs the kubeconfig file being used.
-Note in the overlaus kubstomize.yaml we need to pass the base folder
+Note in the overlays kustomization.yaml we need to pass the base folder
 

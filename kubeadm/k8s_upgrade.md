@@ -27,7 +27,7 @@ Updation methods for the worker nodes:
 For the master node , it's needed to have more than 1 master node else we will have a downtime ,
 
 
-For the componenets if api server is 1.30.X
+For the components if api server is 1.30.X
 controller and scheduler can be x-1, kubelet and kubectl can be x-2
 
 Kubeadm first , then kubelet needs to be upgraded separately and kubectl as well
