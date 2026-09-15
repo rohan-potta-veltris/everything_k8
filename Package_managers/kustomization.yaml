@@ -1,0 +1,7 @@
+resources:
+- folder1/file1.yaml
+- folder1/file2.yaml
+- folder2/file1.yaml
+- folder2/file2.yaml
+- folder3/file1.yaml
+- folder3/file2.yaml
