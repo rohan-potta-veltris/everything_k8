@@ -41,3 +41,7 @@ by default is there anything like deny all with the network policy where all are
 What is the difference in a volume mount and PV and PVC?
 
 CrashbackLoop vs ImagePullBack 
+
+
+In statefulsets , you get and have like each PV, or data for pods , this can be used for applications or the databases, but if i use it for databases then do i have to have the same volume mount?
+and also try and understand where and why the sc needs to be non-provisiones and like why no pvc is needed and how the mounthdir directly does this 
